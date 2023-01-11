@@ -13,6 +13,7 @@
 		0F19B35F296F07EA00BB6EBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F19B35D296F07EA00BB6EBE /* Main.storyboard */; };
 		0F19B361296F07EA00BB6EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F19B360296F07EA00BB6EBE /* Assets.xcassets */; };
 		0F19B364296F07EA00BB6EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F19B362296F07EA00BB6EBE /* LaunchScreen.storyboard */; };
+		0F19B36C296F08DA00BB6EBE /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F19B36B296F08DA00BB6EBE /* CircleProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0F19B360296F07EA00BB6EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F19B363296F07EA00BB6EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F19B365296F07EA00BB6EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F19B36B296F08DA00BB6EBE /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0F19B357296F07EA00BB6EBE /* AppDelegate.swift */,
 				0F19B359296F07EA00BB6EBE /* SceneDelegate.swift */,
 				0F19B35B296F07EA00BB6EBE /* ViewController.swift */,
+				0F19B36B296F08DA00BB6EBE /* CircleProgressView.swift */,
 				0F19B35D296F07EA00BB6EBE /* Main.storyboard */,
 				0F19B360296F07EA00BB6EBE /* Assets.xcassets */,
 				0F19B362296F07EA00BB6EBE /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F19B35C296F07EA00BB6EBE /* ViewController.swift in Sources */,
+				0F19B36C296F08DA00BB6EBE /* CircleProgressView.swift in Sources */,
 				0F19B358296F07EA00BB6EBE /* AppDelegate.swift in Sources */,
 				0F19B35A296F07EA00BB6EBE /* SceneDelegate.swift in Sources */,
 			);
