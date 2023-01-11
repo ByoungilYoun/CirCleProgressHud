@@ -14,6 +14,8 @@
 		0F19B361296F07EA00BB6EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F19B360296F07EA00BB6EBE /* Assets.xcassets */; };
 		0F19B364296F07EA00BB6EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F19B362296F07EA00BB6EBE /* LaunchScreen.storyboard */; };
 		0F19B36C296F08DA00BB6EBE /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F19B36B296F08DA00BB6EBE /* CircleProgressView.swift */; };
+		0F19B36E296F09F000BB6EBE /* ProgressHudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F19B36D296F09F000BB6EBE /* ProgressHudManager.swift */; };
+		0F19B371296F0A0700BB6EBE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0F19B370296F0A0700BB6EBE /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		0F19B363296F07EA00BB6EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F19B365296F07EA00BB6EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F19B36B296F08DA00BB6EBE /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		0F19B36D296F09F000BB6EBE /* ProgressHudManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHudManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F19B371296F0A0700BB6EBE /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +66,7 @@
 				0F19B359296F07EA00BB6EBE /* SceneDelegate.swift */,
 				0F19B35B296F07EA00BB6EBE /* ViewController.swift */,
 				0F19B36B296F08DA00BB6EBE /* CircleProgressView.swift */,
+				0F19B36D296F09F000BB6EBE /* ProgressHudManager.swift */,
 				0F19B35D296F07EA00BB6EBE /* Main.storyboard */,
 				0F19B360296F07EA00BB6EBE /* Assets.xcassets */,
 				0F19B362296F07EA00BB6EBE /* LaunchScreen.storyboard */,
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = CirCleProgressHud;
+			packageProductDependencies = (
+				0F19B370296F0A0700BB6EBE /* SnapKit */,
+			);
 			productName = CirCleProgressHud;
 			productReference = 0F19B354296F07EA00BB6EBE /* CirCleProgressHud.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 0F19B34B296F07EA00BB6EBE;
+			packageReferences = (
+				0F19B36F296F0A0700BB6EBE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 0F19B355296F07EA00BB6EBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,6 +156,7 @@
 				0F19B36C296F08DA00BB6EBE /* CircleProgressView.swift in Sources */,
 				0F19B358296F07EA00BB6EBE /* AppDelegate.swift in Sources */,
 				0F19B35A296F07EA00BB6EBE /* SceneDelegate.swift in Sources */,
+				0F19B36E296F09F000BB6EBE /* ProgressHudManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F19B36F296F0A0700BB6EBE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F19B370296F0A0700BB6EBE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F19B36F296F0A0700BB6EBE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F19B34C296F07EA00BB6EBE /* Project object */;
 }
