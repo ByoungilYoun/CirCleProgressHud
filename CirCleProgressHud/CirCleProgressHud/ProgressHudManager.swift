@@ -21,6 +21,7 @@ class ProgressHudManager : NSObject {
   // MARK: - init
   override init() {
     self.window = UIWindow(frame: UIScreen.main.bounds)
+    self.window.windowScene = UIApplication.shared.connectedScenes.first! as? UIWindowScene
     super.init()
   }
   
@@ -59,7 +60,7 @@ class ProgressHudManager : NSObject {
     
     progressHud.snp.makeConstraints {
       $0.center.equalToSuperview()
-      $0.width.height.equalTo(30)
+//      $0.width.height.equalTo(50)
     }
     progressHud.startAnimation()
   }
