@@ -16,8 +16,6 @@ class ProgressHudManager : NSObject {
   // 새로운 윈도우
   var window : UIWindow
   
-  let progressHud = CircleProgressView.shared
-  
   // MARK: - init
   override init() {
     self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -33,7 +31,6 @@ class ProgressHudManager : NSObject {
   
   // progressHud 애니메이션 스탑
   func stopAnimation() {
-    dismissProgressHud()
     removeWindow()
   }
   
@@ -56,18 +53,8 @@ class ProgressHudManager : NSObject {
   
   // progressHud 세팅
   func makeProgressHud() {
+    let progressHud = CircleProgressView(frame: UIScreen.main.bounds)
     window.addSubview(progressHud)
-    
-    progressHud.snp.makeConstraints {
-      $0.center.equalToSuperview()
-//      $0.width.height.equalTo(50)
-    }
     progressHud.startAnimation()
-  }
-  
-  // progressHud 삭제
-  func dismissProgressHud() {
-    progressHud.removeFromSuperview()
-    progressHud.stopAnimation()
   }
 }

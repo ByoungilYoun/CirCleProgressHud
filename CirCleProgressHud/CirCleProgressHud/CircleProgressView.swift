@@ -10,8 +10,6 @@ import UIKit
 class CircleProgressView : UIView {
   
   // MARK: - Properties
-  static let shared = CircleProgressView()
-  
   var circleLayer = CAShapeLayer()
   var progressLayer = CAShapeLayer()
   var startPoint = CGFloat(-Double.pi / 2)
